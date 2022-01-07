@@ -1,9 +1,7 @@
 <?php
-//memanggil file functions.php
+
 require 'fungsi.php';
 
-//memanggil function query pengambilan data pada table mahasiswa
-//lalu ditampung kedalam variable mahasiswa
 $karyawan = query("SELECT * FROM karyawan");
 ?>
 

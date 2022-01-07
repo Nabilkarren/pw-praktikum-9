@@ -1,10 +1,8 @@
 <?php
 require 'fungsi.php';
 
-//memeriksa apakah tombol submit telah ditekan atau belum
 if (isset($_POST["submit"])) {
 
-    //jika sudah ditekan dijalankan function tambah
     if (tambahTabel($_POST) > 0) {
         echo "berhasil";
         header("location: index.php");

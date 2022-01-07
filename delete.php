@@ -2,12 +2,10 @@
 
 require 'fungsi.php';
 
-//mengambil id yg ingin dihapus
 $id = $_GET["id"];
 
-//membuat alert menggunakan javascript
 if (hapusTabel($id) > 0) {
-    //jika id ada pada database maka if ini jalan
+
     echo "
         <script>
             alert('data berhasil dihapus!');
